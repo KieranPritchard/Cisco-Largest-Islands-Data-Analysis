@@ -21,6 +21,15 @@ area = islands["area"]
 x = np.array(island_list)
 y = np.array(area)
 
+
+plt.title("Top 10 Islands by Area")
+plt.xlabel("Island")
+plt.ylabel("Area")
+
+
 # Outputs a bar chart
 plt.barh(x, y)
 plt.show()
+
+# Save the plot as a PNG file
+plt.savefig('top_10_islands_by_area.png')
