@@ -6,7 +6,10 @@ import numpy as np
 islands = pd.read_csv('./largest-islands.csv')
 
 # Sorts the files based on area and ascending
-islands = islands.sort_values(by="area", ascending=True)
+islands = islands.sort_values(by="area", ascending=False)
+
+# Extracts the first ten islands
+islands = islands.head(10)
 
 # Extracts the islands and stores them
 island_list = islands["island"]
